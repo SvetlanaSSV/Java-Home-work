@@ -1,0 +1,11 @@
+package com.max.idea;
+
+public class MyArrays {
+    public static void main(String[] args) {
+        int [] number = {1, 2, 3, 4, 5};
+        int a = number[0];
+        number[0] = number[number.length - 1];
+        number[number.length - 1] = a;
+        System.out.println(number[(number.length - 1) / 2] + number[0]);
+    }
+    }
